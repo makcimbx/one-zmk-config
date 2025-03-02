@@ -18,5 +18,5 @@ jobs:
       output_folder: keymap-drawer
       install_branch: main
       amend_commit: true
-      draw_args: "ergonaut_one:'-k corne_rotated -l LAYOUT_split_3x6_3'"
+      draw_args: "ergonaut_one:'-d ergonautkb-zmk-module/boards/shields/ergonaut_one/ergonaut_one_layout.dtsi'"
       json_path: keymap-drawer/layouts
