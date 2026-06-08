@@ -172,3 +172,6 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  RU REF: ['&ru_rbkt', '&ru_q', '&ru_w', '&ru_e', '&ru_r', '&ru_t', '&ru_y', '&ru_u', '&ru_i', '&ru_o', '&ru_p', '&ru_lbkt', '&ru_grave', '&ru_a', '&ru_s', '&ru_d',
+    '&ru_f', '&ru_g', '&ru_h', '&ru_j', '&ru_k', '&ru_l', '&ru_semi', '&ru_sqt', '&ru_minus', '&ru_z', '&ru_x', '&ru_c', '&ru_v', '&ru_b', '&ru_n', '&ru_m', '&ru_comma',
+    '&ru_dot', '&ru_fslh', '&ru_bslh', '', '', '', '', '', '']

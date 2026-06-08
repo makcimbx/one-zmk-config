@@ -6,6 +6,7 @@
 #define LWR 1
 #define RSE 2
 #define ADJ 3
+#define RU 4
 
 &lt {
     quick-tap-ms = <200>;
@@ -23,6 +24,45 @@
             if-layers = <LWR RSE>;
             then-layer = <ADJ>;
         };
+    };
+
+    macros {
+        ru_rbkt: ru_rbkt { compatible = "zmk,behavior-macro"; #binding-cells = <0>; label = "Ъ"; display-name = "Ъ"; bindings = <&kp RBKT>; };
+        ru_q: ru_q { compatible = "zmk,behavior-macro"; #binding-cells = <0>; label = "Й"; display-name = "Й"; bindings = <&kp Q>; };
+        ru_w: ru_w { compatible = "zmk,behavior-macro"; #binding-cells = <0>; label = "Ц"; display-name = "Ц"; bindings = <&kp W>; };
+        ru_e: ru_e { compatible = "zmk,behavior-macro"; #binding-cells = <0>; label = "У"; display-name = "У"; bindings = <&kp E>; };
+        ru_r: ru_r { compatible = "zmk,behavior-macro"; #binding-cells = <0>; label = "К"; display-name = "К"; bindings = <&kp R>; };
+        ru_t: ru_t { compatible = "zmk,behavior-macro"; #binding-cells = <0>; label = "Е"; display-name = "Е"; bindings = <&kp T>; };
+        ru_y: ru_y { compatible = "zmk,behavior-macro"; #binding-cells = <0>; label = "Н"; display-name = "Н"; bindings = <&kp Y>; };
+        ru_u: ru_u { compatible = "zmk,behavior-macro"; #binding-cells = <0>; label = "Г"; display-name = "Г"; bindings = <&kp U>; };
+        ru_i: ru_i { compatible = "zmk,behavior-macro"; #binding-cells = <0>; label = "Ш"; display-name = "Ш"; bindings = <&kp I>; };
+        ru_o: ru_o { compatible = "zmk,behavior-macro"; #binding-cells = <0>; label = "Щ"; display-name = "Щ"; bindings = <&kp O>; };
+        ru_p: ru_p { compatible = "zmk,behavior-macro"; #binding-cells = <0>; label = "З"; display-name = "З"; bindings = <&kp P>; };
+        ru_lbkt: ru_lbkt { compatible = "zmk,behavior-macro"; #binding-cells = <0>; label = "Х"; display-name = "Х"; bindings = <&kp LBKT>; };
+        ru_grave: ru_grave { compatible = "zmk,behavior-macro"; #binding-cells = <0>; label = "Ё"; display-name = "Ё"; bindings = <&kp GRAVE>; };
+        ru_a: ru_a { compatible = "zmk,behavior-macro"; #binding-cells = <0>; label = "Ф"; display-name = "Ф"; bindings = <&kp A>; };
+        ru_s: ru_s { compatible = "zmk,behavior-macro"; #binding-cells = <0>; label = "Ы"; display-name = "Ы"; bindings = <&kp S>; };
+        ru_d: ru_d { compatible = "zmk,behavior-macro"; #binding-cells = <0>; label = "В"; display-name = "В"; bindings = <&kp D>; };
+        ru_f: ru_f { compatible = "zmk,behavior-macro"; #binding-cells = <0>; label = "А"; display-name = "А"; bindings = <&kp F>; };
+        ru_g: ru_g { compatible = "zmk,behavior-macro"; #binding-cells = <0>; label = "П"; display-name = "П"; bindings = <&kp G>; };
+        ru_h: ru_h { compatible = "zmk,behavior-macro"; #binding-cells = <0>; label = "Р"; display-name = "Р"; bindings = <&kp H>; };
+        ru_j: ru_j { compatible = "zmk,behavior-macro"; #binding-cells = <0>; label = "О"; display-name = "О"; bindings = <&kp J>; };
+        ru_k: ru_k { compatible = "zmk,behavior-macro"; #binding-cells = <0>; label = "Л"; display-name = "Л"; bindings = <&kp K>; };
+        ru_l: ru_l { compatible = "zmk,behavior-macro"; #binding-cells = <0>; label = "Д"; display-name = "Д"; bindings = <&kp L>; };
+        ru_semi: ru_semi { compatible = "zmk,behavior-macro"; #binding-cells = <0>; label = "Ж"; display-name = "Ж"; bindings = <&kp SEMI>; };
+        ru_sqt: ru_sqt { compatible = "zmk,behavior-macro"; #binding-cells = <0>; label = "Э"; display-name = "Э"; bindings = <&kp SQT>; };
+        ru_minus: ru_minus { compatible = "zmk,behavior-macro"; #binding-cells = <0>; label = "-"; display-name = "-"; bindings = <&kp MINUS>; };
+        ru_z: ru_z { compatible = "zmk,behavior-macro"; #binding-cells = <0>; label = "Я"; display-name = "Я"; bindings = <&kp Z>; };
+        ru_x: ru_x { compatible = "zmk,behavior-macro"; #binding-cells = <0>; label = "Ч"; display-name = "Ч"; bindings = <&kp X>; };
+        ru_c: ru_c { compatible = "zmk,behavior-macro"; #binding-cells = <0>; label = "С"; display-name = "С"; bindings = <&kp C>; };
+        ru_v: ru_v { compatible = "zmk,behavior-macro"; #binding-cells = <0>; label = "М"; display-name = "М"; bindings = <&kp V>; };
+        ru_b: ru_b { compatible = "zmk,behavior-macro"; #binding-cells = <0>; label = "И"; display-name = "И"; bindings = <&kp B>; };
+        ru_n: ru_n { compatible = "zmk,behavior-macro"; #binding-cells = <0>; label = "Т"; display-name = "Т"; bindings = <&kp N>; };
+        ru_m: ru_m { compatible = "zmk,behavior-macro"; #binding-cells = <0>; label = "Ь"; display-name = "Ь"; bindings = <&kp M>; };
+        ru_comma: ru_comma { compatible = "zmk,behavior-macro"; #binding-cells = <0>; label = "Б"; display-name = "Б"; bindings = <&kp COMMA>; };
+        ru_dot: ru_dot { compatible = "zmk,behavior-macro"; #binding-cells = <0>; label = "Ю"; display-name = "Ю"; bindings = <&kp DOT>; };
+        ru_fslh: ru_fslh { compatible = "zmk,behavior-macro"; #binding-cells = <0>; label = "."; display-name = "."; bindings = <&kp FSLH>; };
+        ru_bslh: ru_bslh { compatible = "zmk,behavior-macro"; #binding-cells = <0>; label = "\\"; display-name = "\\"; bindings = <&kp BSLH>; };
     };
 
     keymap {
@@ -63,6 +103,15 @@
                 &bt BT_CLR    &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &bt BT_SEL 4   &bt BT_SEL 3   &bt BT_SEL 2   &bt BT_SEL 1   &bt BT_SEL 0   &bt BT_CLR
                 &sys_reset    &none          &none          &none          &none          &none          &none          &none          &none          &none          &none          &sys_reset
                                                             &trans         &none          &trans         &none          &trans         &trans
+            >;
+        };
+        russian_reference_layer {
+            display-name = "RU REF";
+            bindings = <
+                &ru_rbkt     &ru_q   &ru_w   &ru_e       &ru_r       &ru_t       &ru_y       &ru_u       &ru_i       &ru_o       &ru_p       &ru_lbkt
+                &ru_grave    &ru_a   &ru_s   &ru_d       &ru_f       &ru_g       &ru_h       &ru_j       &ru_k       &ru_l       &ru_semi    &ru_sqt
+                &ru_minus    &ru_z   &ru_x   &ru_c       &ru_v       &ru_b       &ru_n       &ru_m       &ru_comma   &ru_dot     &ru_fslh    &ru_bslh
+                                            &none         &none       &none       &none       &none       &none
             >;
         };
     };

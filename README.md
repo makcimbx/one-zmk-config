@@ -22,6 +22,25 @@ Stability changes in this fork:
 
 Prebuilt UF2 files are available in the fork release: https://github.com/makcimbx/one-zmk-config/releases/tag/ble-stable-2026-06-08
 
+## Russian layout reference
+
+The keyboard firmware sends normal US keycodes. Russian letters are produced by the operating system when the Russian input language is selected. The `RU REF` layer in this keymap is a visual reference layer for Keymap Editor/ZMK Studio; it is not meant to be activated while typing.
+
+```text
+Left half                              Right half
+
+]   Q   W   E   R   T                 Y   U   I   O   P   [
+Ъ   Й   Ц   У   К   Е                 Н   Г   Ш   Щ   З   Х
+
+`   A   S   D   F   G                 H   J   K   L   ;   '
+Ё   Ф   Ы   В   А   П                 Р   О   Л   Д   Ж   Э
+
+-   Z   X   C   V   B                 N   M   ,   .   /   \
+-   Я   Ч   С   М   И                 Т   Ь   Б   Ю   .   \
+```
+
+Thumb keys keep their normal actions and do not correspond to Russian letters.
+
 ## Default keymap
 
 Visual representation of the default keymap in keyboard-layout-editor: [KLE](http://www.keyboard-layout-editor.com/#/gists/13d0f7ae7a8b5835efcd23d61f50336a)
