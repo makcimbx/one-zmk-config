@@ -24,7 +24,7 @@ Prebuilt UF2 files are available in the fork release: https://github.com/makcimb
 
 ## Russian layout reference
 
-The keyboard firmware sends normal US keycodes. Russian letters are produced by the operating system when the Russian input language is selected. The `RU REF` layer in this keymap is a visual reference layer for Keymap Editor/ZMK Studio; it is not meant to be activated while typing.
+The keyboard firmware sends normal US keycodes. Russian letters are produced by the operating system when the Russian input language is selected. Keymap Editor shows firmware keycodes, not OS language output, so use this table as the Russian ЙЦУКЕН reference while keeping the firmware layout unchanged.
 
 ```text
 Left half                              Right half
