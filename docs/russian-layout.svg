@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Ergonaut One Russian layout reference</title>
+  <desc id="desc">Visual reference showing US keycodes and Russian letters for the Ergonaut One keyboard.</desc>
+  <style>
+    :root { color-scheme: light dark; }
+    .bg { fill: #f6f1e8; }
+    .panel { fill: #fffaf0; stroke: #d8c7aa; stroke-width: 2; }
+    .key { fill: #fffdf7; stroke: #bda981; stroke-width: 2; }
+    .thumb { fill: #f8ead2; stroke: #bda981; stroke-width: 2; }
+    .title { font: 700 34px Georgia, serif; fill: #2e2618; }
+    .subtitle { font: 18px Georgia, serif; fill: #6d5d41; }
+    .en { font: 700 17px ui-monospace, Consolas, monospace; fill: #6a5a3b; }
+    .ru { font: 700 34px Georgia, serif; fill: #222018; }
+    .hint { font: 15px Georgia, serif; fill: #756546; }
+    .side { font: 700 18px Georgia, serif; fill: #4d402a; letter-spacing: .05em; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #18140f; }
+      .panel { fill: #231d15; stroke: #5b4a30; }
+      .key { fill: #2a2319; stroke: #6f5a39; }
+      .thumb { fill: #342816; stroke: #80663d; }
+      .title, .ru { fill: #f6ead1; }
+      .subtitle, .en, .hint, .side { fill: #d4bd91; }
+    }
+  </style>
+  <rect class="bg" width="1280" height="720"/>
+  <rect class="panel" x="42" y="42" width="1196" height="636" rx="28"/>
+  <text class="title" x="640" y="96" text-anchor="middle">Ergonaut One Russian Reference</text>
+  <text class="subtitle" x="640" y="128" text-anchor="middle">When the OS input language is Russian, these US keys produce ЙЦУКЕН letters.</text>
+
+  <text class="side" x="255" y="174" text-anchor="middle">LEFT HALF</text>
+  <text class="side" x="1025" y="174" text-anchor="middle">RIGHT HALF</text>
+
+  <defs>
+    <g id="key-shape"><rect class="key" x="0" y="0" width="76" height="70" rx="12"/></g>
+    <g id="thumb-shape"><rect class="thumb" x="0" y="0" width="88" height="68" rx="12"/></g>
+  </defs>
+
+  <g id="left-half" transform="translate(92,196)">
+    <g transform="translate(0,22)"><use href="#key-shape"/><text class="en" x="12" y="24">]</text><text class="ru" x="38" y="53" text-anchor="middle">Ъ</text></g>
+    <g transform="translate(84,12)"><use href="#key-shape"/><text class="en" x="12" y="24">Q</text><text class="ru" x="38" y="53" text-anchor="middle">Й</text></g>
+    <g transform="translate(168,0)"><use href="#key-shape"/><text class="en" x="12" y="24">W</text><text class="ru" x="38" y="53" text-anchor="middle">Ц</text></g>
+    <g transform="translate(252,-8)"><use href="#key-shape"/><text class="en" x="12" y="24">E</text><text class="ru" x="38" y="53" text-anchor="middle">У</text></g>
+    <g transform="translate(336,0)"><use href="#key-shape"/><text class="en" x="12" y="24">R</text><text class="ru" x="38" y="53" text-anchor="middle">К</text></g>
+    <g transform="translate(420,12)"><use href="#key-shape"/><text class="en" x="12" y="24">T</text><text class="ru" x="38" y="53" text-anchor="middle">Е</text></g>
+
+    <g transform="translate(0,104)"><use href="#key-shape"/><text class="en" x="12" y="24">`</text><text class="ru" x="38" y="53" text-anchor="middle">Ё</text></g>
+    <g transform="translate(84,94)"><use href="#key-shape"/><text class="en" x="12" y="24">A</text><text class="ru" x="38" y="53" text-anchor="middle">Ф</text></g>
+    <g transform="translate(168,82)"><use href="#key-shape"/><text class="en" x="12" y="24">S</text><text class="ru" x="38" y="53" text-anchor="middle">Ы</text></g>
+    <g transform="translate(252,74)"><use href="#key-shape"/><text class="en" x="12" y="24">D</text><text class="ru" x="38" y="53" text-anchor="middle">В</text></g>
+    <g transform="translate(336,82)"><use href="#key-shape"/><text class="en" x="12" y="24">F</text><text class="ru" x="38" y="53" text-anchor="middle">А</text></g>
+    <g transform="translate(420,94)"><use href="#key-shape"/><text class="en" x="12" y="24">G</text><text class="ru" x="38" y="53" text-anchor="middle">П</text></g>
+
+    <g transform="translate(0,186)"><use href="#key-shape"/><text class="en" x="12" y="24">-</text><text class="ru" x="38" y="53" text-anchor="middle">-</text></g>
+    <g transform="translate(84,176)"><use href="#key-shape"/><text class="en" x="12" y="24">Z</text><text class="ru" x="38" y="53" text-anchor="middle">Я</text></g>
+    <g transform="translate(168,164)"><use href="#key-shape"/><text class="en" x="12" y="24">X</text><text class="ru" x="38" y="53" text-anchor="middle">Ч</text></g>
+    <g transform="translate(252,156)"><use href="#key-shape"/><text class="en" x="12" y="24">C</text><text class="ru" x="38" y="53" text-anchor="middle">С</text></g>
+    <g transform="translate(336,164)"><use href="#key-shape"/><text class="en" x="12" y="24">V</text><text class="ru" x="38" y="53" text-anchor="middle">М</text></g>
+    <g transform="translate(420,176)"><use href="#key-shape"/><text class="en" x="12" y="24">B</text><text class="ru" x="38" y="53" text-anchor="middle">И</text></g>
+
+    <g transform="translate(252,274)"><use href="#thumb-shape"/><text class="en" x="44" y="28" text-anchor="middle">Tab</text><text class="hint" x="44" y="52" text-anchor="middle">NUM hold</text></g>
+    <g transform="translate(348,290) rotate(15)"><use href="#thumb-shape"/><text class="en" x="44" y="28" text-anchor="middle">Space</text><text class="hint" x="44" y="52" text-anchor="middle">Shift hold</text></g>
+    <g transform="translate(442,326) rotate(30)"><use href="#thumb-shape"/><text class="en" x="44" y="28" text-anchor="middle">Enter</text><text class="hint" x="44" y="52" text-anchor="middle">SYM hold</text></g>
+  </g>
+
+  <g id="right-half" transform="translate(698,196)">
+    <g transform="translate(0,12)"><use href="#key-shape"/><text class="en" x="12" y="24">Y</text><text class="ru" x="38" y="53" text-anchor="middle">Н</text></g>
+    <g transform="translate(84,0)"><use href="#key-shape"/><text class="en" x="12" y="24">U</text><text class="ru" x="38" y="53" text-anchor="middle">Г</text></g>
+    <g transform="translate(168,-8)"><use href="#key-shape"/><text class="en" x="12" y="24">I</text><text class="ru" x="38" y="53" text-anchor="middle">Ш</text></g>
+    <g transform="translate(252,0)"><use href="#key-shape"/><text class="en" x="12" y="24">O</text><text class="ru" x="38" y="53" text-anchor="middle">Щ</text></g>
+    <g transform="translate(336,12)"><use href="#key-shape"/><text class="en" x="12" y="24">P</text><text class="ru" x="38" y="53" text-anchor="middle">З</text></g>
+    <g transform="translate(420,22)"><use href="#key-shape"/><text class="en" x="12" y="24">[</text><text class="ru" x="38" y="53" text-anchor="middle">Х</text></g>
+
+    <g transform="translate(0,94)"><use href="#key-shape"/><text class="en" x="12" y="24">H</text><text class="ru" x="38" y="53" text-anchor="middle">Р</text></g>
+    <g transform="translate(84,82)"><use href="#key-shape"/><text class="en" x="12" y="24">J</text><text class="ru" x="38" y="53" text-anchor="middle">О</text></g>
+    <g transform="translate(168,74)"><use href="#key-shape"/><text class="en" x="12" y="24">K</text><text class="ru" x="38" y="53" text-anchor="middle">Л</text></g>
+    <g transform="translate(252,82)"><use href="#key-shape"/><text class="en" x="12" y="24">L</text><text class="ru" x="38" y="53" text-anchor="middle">Д</text></g>
+    <g transform="translate(336,94)"><use href="#key-shape"/><text class="en" x="12" y="24">;</text><text class="ru" x="38" y="53" text-anchor="middle">Ж</text></g>
+    <g transform="translate(420,104)"><use href="#key-shape"/><text class="en" x="12" y="24">'</text><text class="ru" x="38" y="53" text-anchor="middle">Э</text></g>
+
+    <g transform="translate(0,176)"><use href="#key-shape"/><text class="en" x="12" y="24">N</text><text class="ru" x="38" y="53" text-anchor="middle">Т</text></g>
+    <g transform="translate(84,164)"><use href="#key-shape"/><text class="en" x="12" y="24">M</text><text class="ru" x="38" y="53" text-anchor="middle">Ь</text></g>
+    <g transform="translate(168,156)"><use href="#key-shape"/><text class="en" x="12" y="24">,</text><text class="ru" x="38" y="53" text-anchor="middle">Б</text></g>
+    <g transform="translate(252,164)"><use href="#key-shape"/><text class="en" x="12" y="24">.</text><text class="ru" x="38" y="53" text-anchor="middle">Ю</text></g>
+    <g transform="translate(336,176)"><use href="#key-shape"/><text class="en" x="12" y="24">/</text><text class="ru" x="38" y="53" text-anchor="middle">.</text></g>
+    <g transform="translate(420,186)"><use href="#key-shape"/><text class="en" x="12" y="24">\</text><text class="ru" x="38" y="53" text-anchor="middle">\</text></g>
+
+    <g transform="translate(4,326) rotate(-30)"><use href="#thumb-shape"/><text class="en" x="44" y="28" text-anchor="middle">Esc</text><text class="hint" x="44" y="52" text-anchor="middle">SYM hold</text></g>
+    <g transform="translate(98,290) rotate(-15)"><use href="#thumb-shape"/><text class="en" x="44" y="28" text-anchor="middle">Backspace</text><text class="hint" x="44" y="52" text-anchor="middle">Shift hold</text></g>
+    <g transform="translate(194,274)"><use href="#thumb-shape"/><text class="en" x="44" y="28" text-anchor="middle">Delete</text><text class="hint" x="44" y="52" text-anchor="middle">NUM hold</text></g>
+  </g>
+
+  <text class="hint" x="640" y="650" text-anchor="middle">This is a visual cheat sheet only. The firmware keymap stays US; switch the OS input language to Russian to type these letters.</text>
+</svg>

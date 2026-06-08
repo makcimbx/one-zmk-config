@@ -26,6 +26,8 @@ Prebuilt UF2 files are available in the fork release: https://github.com/makcimb
 
 The keyboard firmware sends normal US keycodes. Russian letters are produced by the operating system when the Russian input language is selected. Keymap Editor shows firmware keycodes, not OS language output, so use this table as the Russian ЙЦУКЕН reference while keeping the firmware layout unchanged.
 
+![Russian layout reference](./docs/russian-layout.svg?raw=true "Russian layout reference")
+
 ```text
 Left half                              Right half
 
