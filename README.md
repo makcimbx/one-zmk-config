@@ -2,6 +2,26 @@
 
 This is a repository for a ZMK Firmware for Ergonaut One keyboard.
 
+## BLE stable fork notes
+
+This fork keeps the Ergonaut One firmware on a known-good ZMK release and includes a Bluetooth compatibility workaround for Windows hosts.
+
+Solved issues observed with the upstream `main`-based build:
+
+- Repeated Bluetooth connect/disconnect loop after pressing `RESET` once.
+- Repeated Bluetooth reconnects after turning both halves off and on again.
+- Pairing working immediately after `settings_reset`, then breaking after a reset or power cycle.
+- The same issue reproduced when either XIAO BLE controller was flashed as the central/left half, which pointed to firmware/host compatibility rather than soldering.
+
+Stability changes in this fork:
+
+- ZMK is pinned to `v0.3.0` instead of tracking the moving `main` branch.
+- The GitHub Actions build workflow is pinned to `zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3.0`.
+- `CONFIG_BT_CTLR_PHY_2M=n` is enabled to avoid 2M PHY pairing/reconnect issues seen with some Windows Bluetooth adapters.
+- Keymap drawing uses the Ergonaut One layout definition from the ZMK module.
+
+Prebuilt UF2 files are available in the fork release: https://github.com/makcimbx/one-zmk-config/releases/tag/ble-stable-2026-06-08
+
 ## Default keymap
 
 Visual representation of the default keymap in keyboard-layout-editor: [KLE](http://www.keyboard-layout-editor.com/#/gists/13d0f7ae7a8b5835efcd23d61f50336a)
